@@ -1,0 +1,96 @@
+$main-block_background: #ffffff00 ;
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    .wrapper{
+        background-color: rgba(255, 255, 255, 0);
+        backdrop-filter: blur(100px);
+    }
+}
+
+
+
+.fairy_tale {
+    background:url('../IMG/Album_1_background.jpg') 50% 100%/cover fixed no-repeat;
+}
+
+.summertime_beauty {
+    background:url('../IMG/Album_2_background.jpg') 50%/cover fixed no-repeat;
+}
+
+.Winter_gold {
+    background:url('../IMG/Album_3_background.jpg') 50%/cover fixed no-repeat;
+}
+
+.winter-spring {
+    background:url('../IMG/Album_4_background.jpg') 50% 35%/cover fixed no-repeat;
+}   
+
+
+
+header {
+    @media (min-device-width: 280px) and (max-device-width: 660px) {
+        width: 10%;
+    }
+    hr{
+        margin: 0px auto;
+        border-top: 2px solid #fff;
+        width: 30%;
+    }
+    
+    h2 {
+        margin: 5px 0px 0px;
+        color: #fff;
+        width: 100%;
+        text-align: center;
+        font-size: 25px;
+        font-weight: 700;
+        text-transform: capitalize;
+    }
+}
+
+
+
+.main-block-album {
+    flex: 1 1 auto;
+    margin: 0px auto;
+    padding: 10px 0px;
+    background-color: $main-block_background;
+    width: 55%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content:center;
+    flex-wrap: wrap;
+    @media (max-width: 700px) {
+        width: 65%;
+    }
+    @media (max-width: 430px) {
+        width: 75%;
+    }
+    @media (max-width: 330px) {
+        width: 80%;
+    }
+   
+    a {
+        margin: 10px 0px;
+        img{
+            object-fit: cover;
+            width: 100%;
+            height: 500px;
+            margin: 0px 0px;
+            box-shadow: 0px 0px 8px 5px  #181818;
+            transition: 0.2s;
+            &:hover {
+                    box-shadow: 0px 0px 8px 5px #0084d0bf;
+                    transition: 0.2s;
+            }
+
+            @media (min-device-width: 280px) and (max-device-width: 660px) {
+                width: 100%;
+                height: 600px;
+            }
+        }
+    }
+}
+
+
